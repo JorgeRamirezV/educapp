@@ -17,16 +17,16 @@
 	font-weight: bold;
 }
 .list-block {
-margin: 2% 0 0 0;
-font-size: 17px;
+	margin: 2% 0 0 0;
+	font-size: 17px;
 }
 .list-block ul{
-border-top: 1px solid #DCDBDF;
-border-bottom: 1px solid #DCDBDF;
+	border-top: 1px solid #DCDBDF;
+	border-bottom: 1px solid #DCDBDF;
 }
 .list-block .item-inner {
-/*border-bottom: 1px solid #c8c7cc;*/
-border-bottom: 1px solid #DCDBDF;
+	/*border-bottom: 1px solid #c8c7cc;*/
+	border-bottom: 1px solid #DCDBDF;
 }
 
 .navbar {
@@ -86,4 +86,3 @@ border-bottom: 1px solid #DCDBDF;
 .border-bottom{
 	border-bottom: 1px solid #ccc;
 }
-,
