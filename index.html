@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html class="with-statusbar-overlay">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <title>My App</title>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Educapp</title>
     <!-- Path to Framework7 Library CSS-->
-    <link rel="stylesheet" href="css/framework7.min.css">
+    <link rel="stylesheet" href="lib/css/framework7.min.css">
     <!-- Path to your custom app styles-->
     <link rel="stylesheet" href="css/my-app.css">
-    <link rel="stylesheet" href="css/ionicons.css" type="text/css" />
+    <link rel="stylesheet" href="lib/css/ionicons.css" />
+    <link rel="stylesheet" href="lib/css/framework7.3dpanels.css">
+    <link href="img/favicon.png" rel="shortcut icon">
 
   </head>
   <body>
@@ -61,6 +63,21 @@
               <div class="item-title">Galería</div>
             </div>
           </li>
+          <li class="item-content list-panel-favorites close-panel item-link">
+          </li>
+          <li class="item-content list-panel-favorites close-panel item-link">
+            <div class="item-media"><i class="icon icon-perfil2"></i></div>
+            <div class="item-inner">
+              <div class="item-title">Mi Perfil</div>
+            </div>
+          </li>
+          
+          <li class="item-content list-panel-favorites close-panel item-link">
+            <div class="item-media"><i class="icon icon-logout2"></i></div>
+            <div class="item-inner">
+              <div class="item-title">Salir</div>
+            </div>
+          </li>
 
         </ul>
       </div>
@@ -80,10 +97,10 @@
         <div class="navbar theme-white">
           <div class="navbar-inner">
             <!-- We have home navbar without left link-->
-            <div class="center sliding"> <img src="img/logo.png" alt="">
+            <div class="center sliding"><img src="img/logo.png" alt="">
             </div>
             <div class="right">
-              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+              <a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
             </div>
           </div>
         </div>
@@ -93,46 +110,45 @@
           <div data-page="index" class="page">
             <!-- Scrollable page content-->
             <div class="page-content">
-              <div class="content-block-title fdo2 color-blue">Colegio Nacional Limache</div>
-              <div class="list-block margin0 media-list">
-                <ul class="fdo3 color-blanco">
-                  <li>
-                    <a href="#" class="item-link item-content fdo3">
-                      <div class="item-media"><img src="img/foto.jpg" width="80"></div>
-                      <div class="item-inner">
-                        <div class="item-title-row">
-                          <div class="item-title">Paloma Elizabeth </div>
+            <div class="content-block-title"><i class="icon ion-university"></i> Colegio Nacional Limache</div>
+              <div class="fdo2">
+              <div class="fdo">
+              <div class="margin0 media-list">
+                  <div class=" margin0 fdo2">
+                      <div class="item-media"><img class="foto" src="img/foto.jpg" width="80"></div>
+                      <div class="item-inner pd-0 nombre">
+                        <div class="item-title-row fdo-none">
+                          <div class="item-title title-name ">Paloma Ramírez Elgueta </div>
                         </div>
-                        <div class="item-title">Ramirez Elgueta</div>
-                        <div class="item-text font-italic">Prekinder A</div>
+                        <div class="item-text font-italic title-curso">Prekinder A</div>
                       </div>
-                    </a>
-                  </li>
-                </ul>
+                  </div>
               </div>
-              <div class="list-block color-gris">
-                <ul>
+              </div>
+              </div>
+              <div class="list-block">
+                <ul class="border-none">
                   <li>
                     <a href="#" class="item-link item-content">
-                      <div class="item-media"><i class="icon icon-alert"></i></div>
+                      <div class="item-media"><i class="icon icon-alert2"></i></div>
                       <div class="item-inner">
-                        <div class="item-title">EMERGENCIAS</div>
-                        <div class="item-after"><span class="badge bg-red">2</span></div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="comu.html" class="item-link item-content">
-                      <div class="item-media"><i class="icon icon-comunic"></i></div>
-                      <div class="item-inner">
-                        <div class="item-title">Comunicación</div>
+                        <div class="item-title">Emergencias</div>
                         <div class="item-after"><span class="badge"></span></div>
                       </div>
                     </a>
                   </li>
                   <li>
+                    <a href="comu.html" class="item-link item-content">
+                      <div class="item-media"><i class="icon icon-comunic2"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title">Comunicación</div>
+                        <div class="item-after"><span class="badge-blanco">1</span></div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
                     <a href="#" class="item-link item-content">
-                      <div class="item-media"><i class="icon icon-reu"></i></div>
+                      <div class="item-media"><i class="icon icon-reu2"></i></div>
                       <div class="item-inner">
                         <div class="item-title">Reunión</div>
                         <div class="item-after"><span class="badge"></span></div>
@@ -141,7 +157,7 @@
                   </li>
                   <li>
                     <a href="#" class="item-link item-content">
-                      <div class="item-media"><i class="icon icon-cita"></i></div>
+                      <div class="item-media"><i class="icon icon-cita2"></i></div>
                       <div class="item-inner">
                         <div class="item-title">Citación</div>
                         <div class="item-after"><span class="badge"></span></div>
@@ -150,7 +166,7 @@
                   </li>
                   <li>
                     <a href="#" class="item-link item-content">
-                      <div class="item-media"><i class="icon icon-mat"></i></div>
+                      <div class="item-media"><i class="icon icon-mat2"></i></div>
                       <div class="item-inner">
                         <div class="item-title">Materiales</div>
                         <div class="item-after"><span class="badge"></span></div>
@@ -159,7 +175,7 @@
                   </li>
                   <li>
                     <a href="#" class="item-link item-content">
-                      <div class="item-media"><i class="icon icon-gal"></i></div>
+                      <div class="item-media"><i class="icon icon-gal2"></i></div>
                       <div class="item-inner">
                         <div class="item-title">Galería Fotos</div>
                         <div class="item-after"><span class="badge"></span></div>
@@ -177,8 +193,10 @@
       </div>
     </div>
     <!-- Path to Framework7 Library JS-->
-    <script type="text/javascript" src="js/framework7.min.js"></script>
     <!-- Path to your app js-->
-    <script type="text/javascript" src="js/my-app.js"></script>
   </body>
 </html>
+<script type="text/javascript" src="lib/lodash.js"></script>
+<script type="text/javascript" src="lib/framework7.js"></script>
+<script type="text/javascript" src="lib/framework7.3dpanels.js"></script>
+<script data-main="app" src="lib/require.js"></script> 
